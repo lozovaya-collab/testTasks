@@ -1,0 +1,623 @@
+* {
+  margin: 0 auto;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+.box {
+  width: 100%;
+  height: 40.625em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .box {
+    width: 100%;
+    height: 846px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@font-face {
+  font-family: 'Montserrat-bold';
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat-ExtraBold';
+  src: url("../fonts/Montserrat-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+.card {
+  width: 1120px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+}
+
+.card__image {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  height: 100%;
+  border-radius: 1px 0 0 1px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#428A60), to(#35734F));
+  background: linear-gradient(180deg, #428A60 0%, #35734F 100%);
+}
+
+.card__image__title {
+  margin: 0;
+  padding: 2.2em;
+  color: #ffff;
+  font-family: 'Montserrat-Bold';
+  font-size: 1.125em;
+  line-height: 130%;
+}
+
+.card__image__title:nth-child(2) {
+  padding-bottom: 1.9em;
+}
+
+.card__image_medicine {
+  width: 29.0625em;
+  height: 15.9375em;
+  left: 3.5625em;
+  top: 13.25em;
+  position: absolute;
+}
+
+.card__image_big-circle {
+  display: block;
+  position: absolute;
+  width: 43em;
+  height: 43em;
+  left: 14.5625em;
+  top: -5.5625em;
+  opacity: 0.03;
+  border: 1.25em solid #ffff;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card__image_circle {
+  position: absolute;
+  width: 24.875em;
+  height: 24.875em;
+  left: 1.1875em;
+  top: 4.5625em;
+  background: #428A60;
+  border-radius: 50%;
+}
+
+.card__form {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0 1px 1px 0;
+  background-color: #ffff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__form_header {
+  border-radius: 0 30px 0 0;
+  height: 27.2%;
+  width: 100%;
+  background-color: #F8F8F8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__form_header_text {
+  width: 303px;
+  height: 78px;
+  text-align: center;
+  padding: 0 1.8125em;
+  font-family: 'Montserrat-ExtraBold';
+  font-size: 1.875em;
+  line-height: 130%;
+  color: black;
+}
+
+.card__form_body {
+  letter-spacing: 0.05em;
+  height: 72.8%;
+  width: 100%;
+  background-color: #ffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card__form_body__footer {
+  display: none;
+}
+
+.card__form_body__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 38px;
+  margin-left: 117px;
+  cursor: pointer;
+  width: 320px;
+  height: 42px;
+  background: #428A60;
+  border-radius: 0.3125em;
+  outline: none;
+  border: none;
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  font-family: 'Montserrat-SemiBold';
+  color: #ffff;
+  font-size: 0.875em;
+  line-height: 130%;
+}
+
+.card__form_body__button div {
+  margin: 2px 0 0 8px;
+}
+
+.card__form_body__button:hover {
+  background: #52ac77;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card__form_body .information {
+  width: 320.18px;
+  height: 172px;
+  margin-top: -7px;
+  margin-left: 117px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__form_body input {
+  padding: 1em 1.25em 1em 1.4em;
+  height: 50px;
+  letter-spacing: 0.05em;
+  background: #F8F8F8;
+  border: 0.0625em solid #E4E4E4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.3125em;
+  outline: none;
+  font-family: 'Montserrat-SemiBold';
+  color: black;
+}
+
+.card__form_body input::-webkit-input-placeholder {
+  color: black;
+  opacity: 0.2;
+}
+
+.card__form_body input::-moz-placeholder {
+  color: black;
+  opacity: 0.2;
+}
+
+.card__form_body_name {
+  width: 20em;
+  height: 4.75em;
+}
+
+.card__form_body_name input {
+  width: 100%;
+}
+
+.card__form_body_phone {
+  width: 20em;
+  height: 4.75em;
+}
+
+.card__form_body_phone div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__form_body_phone div:last-child div {
+  padding: 0 14px;
+  font-family: 'Montserrat-SemiBold';
+  color: black;
+  font-size: 14px;
+  line-height: 130%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 116.18px;
+  height: 50px;
+  background: #F8F8F8;
+  border: 1px solid #E4E4E4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.card__form_body_phone div:last-child div button {
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.card__form_body_phone input {
+  width: 184px;
+  margin: 0;
+}
+
+.card__form_body_title {
+  font-family: 'Montserrat-ExtraBold';
+  color: black;
+  font-size: 0.75em;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+.card__form_body_title span {
+  color: #428A60;
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .card {
+    width: 320px;
+    height: 727px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card__image {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    height: 19.4375em;
+    background: #ffff;
+    border-radius: 1px 1px 0 0;
+  }
+  .card__image__title {
+    margin: 0;
+    padding: 40px 20px 0 20px;
+    color: black;
+  }
+  .card__image__title:nth-child(2) {
+    padding-bottom: 20px;
+  }
+  .card__image_medicine {
+    width: 13.9375em;
+    height: 7.625em;
+    left: 3.5em;
+    top: 7.5625em;
+  }
+  .card__image_big-circle {
+    display: none;
+  }
+  .card__image_circle {
+    width: 202px;
+    height: 202px;
+    left: 3.6875em;
+  }
+  .card__form {
+    width: 100%;
+    height: 26em;
+    border-radius: 0 0 1px 1px;
+    background-color: #ffff;
+  }
+  .card__form_header {
+    width: 100%;
+    height: 82px;
+    background-color: #ffff;
+  }
+  .card__form_header_text {
+    width: 278px;
+    padding: 0 0;
+  }
+  .card__form_header br {
+    display: none;
+  }
+  .card__form_body {
+    position: relative;
+  }
+  .card__form_body__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    font-family: 'Montserrat-Bold';
+    line-height: 130%;
+    width: 320px;
+    height: 40px;
+    left: 0px;
+    top: 294px;
+    border-radius: 0 0 1px 1px;
+    line-height: 130%;
+    letter-spacing: 0;
+    padding: 12px 72.86px 11px 72px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 14px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #F8F8F8;
+  }
+  .card__form_body__button {
+    margin: 29px 0 0 20px;
+    width: 280px;
+  }
+  .card__form_body .information {
+    width: 280px;
+    height: 172px;
+    margin: -11px 0 0 20px;
+  }
+  .card__form_body_name {
+    width: 100%;
+    height: 4.75em;
+  }
+  .card__form_body_name input {
+    padding: 1.2em 1.25em 1em 0.7em;
+  }
+  .card__form_body_phone {
+    width: 100%;
+    height: 4.75em;
+  }
+  .card__form_body_phone div:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card__form_body_phone div:last-child div {
+    padding: 0 4px;
+    margin: 0;
+    width: 96.18px;
+    height: 50px;
+  }
+  .card__form_body_phone input {
+    width: 174px;
+    padding: 1.1em 1.25em 1em 0.6em;
+  }
+  .card__form_body_title {
+    font-family: 'Montserrat-ExtraBold';
+    color: black;
+    font-size: 0.75em;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+  }
+  .card__form_body_title span {
+    color: #428A60;
+  }
+}
+
+@media screen and (max-width: 1112px) and (min-width: 769px) {
+  .card {
+    width: 769px;
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+  }
+  .card__image_medicine {
+    width: 22.0625em;
+    height: 14.9375em;
+    left: 0.5625em;
+    top: 12.25em;
+  }
+  .card__form_header_text br {
+    display: none;
+  }
+  .card__form_body__button {
+    margin-left: 34px;
+  }
+  .card__form_body .information {
+    margin-left: 34px;
+  }
+  .card__form_body input {
+    padding: 1em 1.25em 1em 1.4em;
+    height: 50px;
+    letter-spacing: 0.05em;
+    background: #F8F8F8;
+    border: 0.0625em solid #E4E4E4;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 0.3125em;
+    outline: none;
+    font-family: 'Montserrat-SemiBold';
+    color: black;
+  }
+  .card__form_body input::-webkit-input-placeholder {
+    color: black;
+    opacity: 0.2;
+  }
+  .card__form_body input::-moz-placeholder {
+    color: black;
+    opacity: 0.2;
+  }
+  .card__form_body_name {
+    width: 20em;
+    height: 4.75em;
+  }
+  .card__form_body_name input {
+    width: 100%;
+  }
+  .card__form_body_phone {
+    width: 20em;
+    height: 4.75em;
+  }
+  .card__form_body_phone div:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card__form_body_phone div:last-child div {
+    padding: 0 14px;
+    font-family: 'Montserrat-SemiBold';
+    color: black;
+    font-size: 14px;
+    line-height: 130%;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 116.18px;
+    height: 50px;
+    background: #F8F8F8;
+    border: 1px solid #E4E4E4;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 5px;
+  }
+  .card__form_body_phone div:last-child div button {
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  .card__form_body_phone input {
+    width: 184px;
+    margin: 0;
+  }
+  .card__form_body_title {
+    font-family: 'Montserrat-ExtraBold';
+    color: black;
+    font-size: 0.75em;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+  }
+  .card__form_body_title span {
+    color: #428A60;
+  }
+}
+/*# sourceMappingURL=style.css.map */
